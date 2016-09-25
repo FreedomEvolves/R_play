@@ -28,7 +28,7 @@ fileout = 'pops.R'
 dataset = "y <- c(#{array})
 x <- c(1:20)
 plot(x, y)
-abline(h=mean(y))"
+abline(h=mean(y))"   # introduces unwanted characters and sqaure brackets for the array
 yaml_save dataset, fileout
-`mv pops.R ..`
+`mv pops.R ..`  # moves file so R studio can access it
 
